@@ -1,0 +1,121 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pull_Request_Log", "Pull_Request_Log\Pull_Request_Log.csproj", "{67A3848E-A691-40D0-BB09-D559BF0B0766}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "..\GithubSharp\Core\Core.csproj", "{59C24364-8C00-46AD-9CE6-1D5630656DF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcApplication", "..\GithubSharp\Samples\MvcSample\MvcApplication\MvcApplication.csproj", "{308EBC64-BFA7-40E3-9855-20099B94C665}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleSample", "..\GithubSharp\Samples\ConsoleSample\ConsoleSample.csproj", "{38C76F61-476B-4821-A054-E5FC54F9EDA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCache", "..\GithubSharp\Plugins\CacheProviders\WebCache\WebCache.csproj", "{4CF09821-4DF8-4DFE-B22E-3EBAE4A01C33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleLogProvider", "..\GithubSharp\Plugins\LogProviders\SimpleLogProvider\SimpleLogProvider.csproj", "{26AB1C43-34F7-446C-A514-EB0E38730631}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MvcUI", "..\GithubSharp\Samples\MvcSample\MvcUI\", "{AE2FAB3D-EA24-4697-9F7E-16471878AA33}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{308EBC64-BFA7-40E3-9855-20099B94C665}|GithubSharp.MvcSample.MvcApplication.dll;{59C24364-8C00-46AD-9CE6-1D5630656DF9}|GithubSharp.Core.dll;{4CF09821-4DF8-4DFE-B22E-3EBAE4A01C33}|GithubSharp.Plugins.CacheProviders.WebCache.dll;{26AB1C43-34F7-446C-A514-EB0E38730631}|GithubSharp.Plugins.LogProviders.SimpleLogProvider.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/MvcUI"
+		Debug.AspNetCompiler.PhysicalPath = "..\GithubSharp\Samples\MvcSample\MvcUI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\MvcUI\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/MvcUI"
+		Release.AspNetCompiler.PhysicalPath = "..\GithubSharp\Samples\MvcSample\MvcUI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\MvcUI\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62929"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67A3848E-A691-40D0-BB09-D559BF0B0766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67A3848E-A691-40D0-BB09-D559BF0B0766}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67A3848E-A691-40D0-BB09-D559BF0B0766}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{67A3848E-A691-40D0-BB09-D559BF0B0766}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{67A3848E-A691-40D0-BB09-D559BF0B0766}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{67A3848E-A691-40D0-BB09-D559BF0B0766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67A3848E-A691-40D0-BB09-D559BF0B0766}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67A3848E-A691-40D0-BB09-D559BF0B0766}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{67A3848E-A691-40D0-BB09-D559BF0B0766}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{67A3848E-A691-40D0-BB09-D559BF0B0766}.Release|x86.ActiveCfg = Release|Any CPU
+		{59C24364-8C00-46AD-9CE6-1D5630656DF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59C24364-8C00-46AD-9CE6-1D5630656DF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59C24364-8C00-46AD-9CE6-1D5630656DF9}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{59C24364-8C00-46AD-9CE6-1D5630656DF9}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{59C24364-8C00-46AD-9CE6-1D5630656DF9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{59C24364-8C00-46AD-9CE6-1D5630656DF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59C24364-8C00-46AD-9CE6-1D5630656DF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59C24364-8C00-46AD-9CE6-1D5630656DF9}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{59C24364-8C00-46AD-9CE6-1D5630656DF9}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{59C24364-8C00-46AD-9CE6-1D5630656DF9}.Release|x86.ActiveCfg = Release|Any CPU
+		{308EBC64-BFA7-40E3-9855-20099B94C665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{308EBC64-BFA7-40E3-9855-20099B94C665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{308EBC64-BFA7-40E3-9855-20099B94C665}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{308EBC64-BFA7-40E3-9855-20099B94C665}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{308EBC64-BFA7-40E3-9855-20099B94C665}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{308EBC64-BFA7-40E3-9855-20099B94C665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{308EBC64-BFA7-40E3-9855-20099B94C665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{308EBC64-BFA7-40E3-9855-20099B94C665}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{308EBC64-BFA7-40E3-9855-20099B94C665}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{308EBC64-BFA7-40E3-9855-20099B94C665}.Release|x86.ActiveCfg = Release|Any CPU
+		{38C76F61-476B-4821-A054-E5FC54F9EDA5}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{38C76F61-476B-4821-A054-E5FC54F9EDA5}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{38C76F61-476B-4821-A054-E5FC54F9EDA5}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{38C76F61-476B-4821-A054-E5FC54F9EDA5}.Debug|x86.ActiveCfg = Debug|x86
+		{38C76F61-476B-4821-A054-E5FC54F9EDA5}.Debug|x86.Build.0 = Debug|x86
+		{38C76F61-476B-4821-A054-E5FC54F9EDA5}.Release|Any CPU.ActiveCfg = Release|x86
+		{38C76F61-476B-4821-A054-E5FC54F9EDA5}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{38C76F61-476B-4821-A054-E5FC54F9EDA5}.Release|Mixed Platforms.Build.0 = Release|x86
+		{38C76F61-476B-4821-A054-E5FC54F9EDA5}.Release|x86.ActiveCfg = Release|x86
+		{38C76F61-476B-4821-A054-E5FC54F9EDA5}.Release|x86.Build.0 = Release|x86
+		{4CF09821-4DF8-4DFE-B22E-3EBAE4A01C33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CF09821-4DF8-4DFE-B22E-3EBAE4A01C33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CF09821-4DF8-4DFE-B22E-3EBAE4A01C33}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4CF09821-4DF8-4DFE-B22E-3EBAE4A01C33}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4CF09821-4DF8-4DFE-B22E-3EBAE4A01C33}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4CF09821-4DF8-4DFE-B22E-3EBAE4A01C33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CF09821-4DF8-4DFE-B22E-3EBAE4A01C33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CF09821-4DF8-4DFE-B22E-3EBAE4A01C33}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4CF09821-4DF8-4DFE-B22E-3EBAE4A01C33}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4CF09821-4DF8-4DFE-B22E-3EBAE4A01C33}.Release|x86.ActiveCfg = Release|Any CPU
+		{26AB1C43-34F7-446C-A514-EB0E38730631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26AB1C43-34F7-446C-A514-EB0E38730631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26AB1C43-34F7-446C-A514-EB0E38730631}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{26AB1C43-34F7-446C-A514-EB0E38730631}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{26AB1C43-34F7-446C-A514-EB0E38730631}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{26AB1C43-34F7-446C-A514-EB0E38730631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26AB1C43-34F7-446C-A514-EB0E38730631}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26AB1C43-34F7-446C-A514-EB0E38730631}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{26AB1C43-34F7-446C-A514-EB0E38730631}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{26AB1C43-34F7-446C-A514-EB0E38730631}.Release|x86.ActiveCfg = Release|Any CPU
+		{AE2FAB3D-EA24-4697-9F7E-16471878AA33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE2FAB3D-EA24-4697-9F7E-16471878AA33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE2FAB3D-EA24-4697-9F7E-16471878AA33}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{AE2FAB3D-EA24-4697-9F7E-16471878AA33}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{AE2FAB3D-EA24-4697-9F7E-16471878AA33}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AE2FAB3D-EA24-4697-9F7E-16471878AA33}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE2FAB3D-EA24-4697-9F7E-16471878AA33}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{AE2FAB3D-EA24-4697-9F7E-16471878AA33}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{AE2FAB3D-EA24-4697-9F7E-16471878AA33}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{AE2FAB3D-EA24-4697-9F7E-16471878AA33}.Release|x86.ActiveCfg = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

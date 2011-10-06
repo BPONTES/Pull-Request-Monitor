@@ -1,0 +1,75 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="4CF09821-4DF8-4DFE-B22E-3EBAE4A01C33/f:WebCacher.cs" caret="0" fromTop="0" />
+      <File id="308EBC64-BFA7-40E3-9855-20099B94C665/d:Controllers/f:IssuesController.cs" caret="0" fromTop="0" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Views/d:GitPullRequests/f:Index.aspx" caret="1034" fromTop="19" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="1158" fromTop="36" />
+      <File id="308EBC64-BFA7-40E3-9855-20099B94C665/f:Default.cs" caret="742" fromTop="18" />
+      <File id="308EBC64-BFA7-40E3-9855-20099B94C665/d:Controllers/f:UserController.cs" caret="370" fromTop="13" />
+      <File id="308EBC64-BFA7-40E3-9855-20099B94C665/f:ServerApp.cs" caret="1020" fromTop="25" />
+      <File id="AE2FAB3D-EA24-4697-9F7E-16471878AA33/f:Global.asax" caret="0" fromTop="0" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="1486" fromTop="23" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="2373" fromTop="41" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="1702" fromTop="27" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="1948" fromTop="30" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="2326" fromTop="37" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Views/d:GitPullRequests/f:Index.aspx" caret="418" fromTop="9" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Views/d:GitPullRequests/f:Index.aspx" caret="395" fromTop="9" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Views/d:GitPullRequests/f:Index.aspx" caret="1134" fromTop="22" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="1320" fromTop="37" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="652" fromTop="22" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="437" fromTop="20" />
+      <File id="308EBC64-BFA7-40E3-9855-20099B94C665/f:ServerApp.cs" caret="832" fromTop="17" />
+      <File id="308EBC64-BFA7-40E3-9855-20099B94C665/f:ServerApp.cs" caret="1101" fromTop="26" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="public" priority="1" />
+      <Item value="ActionResult`0" priority="0" />
+      <Item value="string" priority="2" />
+      <Item value="Repo" priority="0" />
+      <Item value="request" priority="0" />
+      <Item value="true" priority="0" />
+      <Item value="View`0" priority="0" />
+      <Item value="ViewData" priority="0" />
+      <Item value="null" priority="0" />
+      <Item value="results" priority="0" />
+      <Item value="PullState`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.HttpWebRequest">
+      <Item value="AuthenticationLevel" priority="0" />
+      <Item value="PreAuthenticate" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Replace`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
