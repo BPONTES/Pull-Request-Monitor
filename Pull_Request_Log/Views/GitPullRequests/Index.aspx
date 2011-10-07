@@ -13,37 +13,56 @@
 <body>
     <form method="post" action="/GitPullRequests/GetPullRequests">
         <div>
-         <label id="repoLbl" for="Repo">Repository Name</label> <input type=text id="Repo" name="Repo"/>   
+         <label id="repoLbl" for="Repo">Repository Name</label> <%= Html.TextBox("Repo")%> 
         </div>
         <div>
-         <label id="userLbl" for="Repo">User Name</label> <input type=text id="UserName" name="UserName"/>   
+         <label id="Label1" for="Repo">Branch Name</label> <%= Html.TextBox("BranchName")%>
+        </div>
+        <div>
+         <label id="userLbl" for="Repo">User Name</label> <%= Html.TextBox("UserName")%>   
         </div>
         <div>
          <label id="pwdLbl" for="Repo">Password</label> <input type=password id="UserPassword" name="UserPassword"/>   
         </div>
         <div>
-         <label id="Label1" for="Repo">Start Pull Id</label> <input type=text id="StartId" name="StartId"/>   
-        </div>
-        <div>
-         <label id="Label2" for="Repo">End Pull Id</label> <input type=text id="EndId" name="EndId"/>   
+         <label id="Label3" for="Repo">Filter Date</label> <%= Html.TextBox("FilterDate")%>   
         </div>
         <input type="submit" id="GetPullRequests" />
     </form>
     <% if (ViewData["Response"] != null)
        {%>
-       <table>
-       <tr>
+       <table cellspacing="0" cellpadding="5" width="100%" border="0" style="border-width:1px;width:100%;border-collapse:collapse;">
+       <tr style="background-color:Gainsboro;">
          <td>Commit Id</td>
          <td>Pull Id</td>
-         <td>URL</td>
+         <td>Author</td>
+         <td>Authored Date</td>
+         <td>Message</td>
        </tr>
-       <%  List<Tuple<string, int, string>> results = (List<Tuple<string, int, string>>)ViewData["Response"];
-           foreach(Tuple<string, int, string> disc in results)
+       <%  Dictionary<Commit, PullRequest> CommitHash = (Dictionary<Commit, PullRequest>)ViewData["Response"];
+           foreach (var pullRequest in CommitHash)
            {%>
                <tr>
-                 <td><%= disc.Item1 %></td>
-                 <td><%= disc.Item2 %></td>
-                 <td><%= disc.Item3 %></td>
+                 <td><a href="<%= pullRequest.Key.URL%>"><%= pullRequest.Key.Id%></a></td>
+                 <td>
+                    <%
+                        string pullId = "None";
+                        bool found = false;
+                        if (pullRequest.Value != null)
+                        {
+                            pullId = pullRequest.Value.Number.ToString();
+                            found = true;
+                        }
+                        else if (pullRequest.Key.Message.Contains("Merge pull request #"))
+                        {
+                            pullId = "Pull";
+                            found = true;  
+                        }%>
+                   <span style="color:<%= found ? "Green" : "Red" %>;" ><%=pullId %></span>
+                 </td>
+                 <td><%= pullRequest.Key.Author.Name%></td>
+                 <td><%= pullRequest.Key.AuthoredDate.ToShortDateString()%></td>
+                 <td><%= pullRequest.Key.Message%></td>
                </tr>
          <%}%>
 

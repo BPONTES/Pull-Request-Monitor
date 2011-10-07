@@ -1,0 +1,7 @@
+D:\Projects\Pull_Request_Log\GithubSharp_Wrapper\bin\Debug\GithubSharp_Wrapper.dll
+D:\Projects\Pull_Request_Log\GithubSharp_Wrapper\bin\Debug\GithubSharp_Wrapper.pdb
+D:\Projects\Pull_Request_Log\GithubSharp_Wrapper\bin\Debug\GithubSharp.Core.dll
+D:\Projects\Pull_Request_Log\GithubSharp_Wrapper\bin\Debug\GithubSharp.Core.pdb
+D:\Projects\Pull_Request_Log\GithubSharp_Wrapper\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Pull_Request_Log\GithubSharp_Wrapper\obj\Debug\GithubSharp_Wrapper.dll
+D:\Projects\Pull_Request_Log\GithubSharp_Wrapper\obj\Debug\GithubSharp_Wrapper.pdb

@@ -11,6 +11,7 @@ using GithubSharp.Core.API;
 using System.Runtime.Serialization.Json;
 using GithubSharp.Core.Models;
 using GithubSharp.Core.Models.Internal;
+using GithubSharp_Wrapper;
 using PullRequest = GithubSharp.Core.Models.PullRequest;
 
 namespace Pull_Request_Log.Controllers
@@ -50,52 +51,54 @@ namespace Pull_Request_Log.Controllers
         //
         // GET: /GitPullRequests/Details/5
 
-        public ActionResult GetPullRequests(string Repo, string UserName, string UserPassword, int StartId, int EndId)
+        public ActionResult GetPullRequests(string Repo, string UserName, string UserPassword, DateTime FilterDate, string BranchName = "develop")
         {
             bool fetchNextBatch = true;
             List<PullRequest> totalPulls = new List<PullRequest>();
-            int pullId = StartId;
-            // Create the web request
+
+            List<Commit> totalCommits = new List<Commit>();
+            int page = 1;
             while (fetchNextBatch)
             {
-                HttpWebRequest request
-                    =
-                    WebRequest.Create(string.Format("https://github.com/api/v2/json/pulls/mdsol/{0}/{1}", Repo, pullId)) as
-                    HttpWebRequest;
+                var totalCommitsFetched = CommitsWrapper.GetCommitsRequest(Repo, UserName, UserPassword, BranchName, page);
+                var tempList = totalCommitsFetched.Where(totalCommit => totalCommit.AuthoredDate > FilterDate || totalCommit.CommittedDate > FilterDate).ToList();
+                if (tempList.Count <= 5) fetchNextBatch = false;
+                totalCommits.AddRange(tempList);
+                page++;
+            }
+            Thread.Sleep(20000);
+            fetchNextBatch = true;
 
-                // Add authentication to request  
-                string authInfo = UserName + ":" + UserPassword;
-                authInfo = Convert.ToBase64String(Encoding.Default.GetBytes(authInfo));
-                request.Headers["Authorization"] = "Basic " + authInfo;
+            List<PullRequest> totalPullsValid = new List<PullRequest>();
+            page = 1;
+            while (fetchNextBatch)
+            {
+                var totalPullsFetched = PullRequestsWrapper.GetPullRequests(Repo, UserName, UserPassword,page);
+                var temptotalPullsValid = totalPullsFetched.Where(pull => pull.Created > FilterDate).ToList();
+                if (temptotalPullsValid.Count <= totalPullsFetched.Count()) fetchNextBatch = false;
+                totalPullsValid.AddRange(temptotalPullsValid);
+                page++;
+            }
 
-                // Get response
-                PullRequest requests = null;
-                using (HttpWebResponse response = request.GetResponse() as HttpWebResponse)
-                {
-                    // Get the response stream  
-                    StreamReader reader = new StreamReader(response.GetResponseStream());
-                    string responseTxt = reader.ReadToEnd();
-                    var serializer = new DataContractJsonSerializer(typeof(PullRequestContainer));
-                    PullRequest pullRequests = null;
-                    using (var ms = new MemoryStream(Encoding.Unicode.GetBytes(responseTxt)))
-                    {
-                        pullRequests = ((PullRequestContainer)serializer.ReadObject(ms)).PullRequest;
-                    }
-                    requests = pullRequests;
-                }
-                totalPulls.Add(requests);
-                fetchNextBatch = pullId < EndId;
-                pullId++;
+            // Create the web request
+            foreach (var pullRequest in totalPullsValid)
+            {
+                totalPulls.Add(PullRequestWrapper.GetPullRequest(Repo, UserName, UserPassword, pullRequest.Number));
                 Thread.Sleep(900); 
             }
-            var commits = (from pull in totalPulls
-                           from discussionEntry in pull.Discussion
-                           where discussionEntry.Type == "Commit"
-                           select new Tuple<string, int, string>(discussionEntry.Id, pull.Number, pull.DiffUrl)).ToList();
 
-            ViewData["Response"] = commits.ToList();
+            Dictionary<Commit,PullRequest> CommitHash = new Dictionary<Commit, PullRequest>();
+            foreach (var totalCommit in totalCommits)
+            {
+                string hash = totalCommit.Id;
+                var matchingPull = totalPulls.FirstOrDefault(p => p.Discussion.Any(d => d.Type == "Commit" && d.Id == hash));
+                CommitHash.Add(totalCommit, matchingPull);
+            }
+            ViewData["Response"] = CommitHash;
 
             return View("Index");
         }
+
+        
     }
 }

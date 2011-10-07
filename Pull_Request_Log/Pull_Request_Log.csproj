@@ -157,6 +157,10 @@
       <Project>{26AB1C43-34F7-446C-A514-EB0E38730631}</Project>
       <Name>SimpleLogProvider</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GithubSharp_Wrapper\GithubSharp_Wrapper.csproj">
+      <Project>{0BA2E4EE-1B96-411E-818A-A9CA542E5590}</Project>
+      <Name>GithubSharp_Wrapper</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

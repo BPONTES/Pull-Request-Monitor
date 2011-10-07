@@ -3,34 +3,58 @@
     <string />
     <integer />
     <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
       <setting name="SolutionAnalysisEnabled">False</setting>
     </boolean>
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
       <File id="4CF09821-4DF8-4DFE-B22E-3EBAE4A01C33/f:WebCacher.cs" caret="0" fromTop="0" />
-      <File id="308EBC64-BFA7-40E3-9855-20099B94C665/d:Controllers/f:IssuesController.cs" caret="0" fromTop="0" />
-      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Views/d:GitPullRequests/f:Index.aspx" caret="1034" fromTop="19" />
-      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="1158" fromTop="36" />
-      <File id="308EBC64-BFA7-40E3-9855-20099B94C665/f:Default.cs" caret="742" fromTop="18" />
-      <File id="308EBC64-BFA7-40E3-9855-20099B94C665/d:Controllers/f:UserController.cs" caret="370" fromTop="13" />
-      <File id="308EBC64-BFA7-40E3-9855-20099B94C665/f:ServerApp.cs" caret="1020" fromTop="25" />
-      <File id="AE2FAB3D-EA24-4697-9F7E-16471878AA33/f:Global.asax" caret="0" fromTop="0" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/f:Web.config" caret="1390" fromTop="17" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/f:packages.config" caret="0" fromTop="0" />
+      <File id="59C24364-8C00-46AD-9CE6-1D5630656DF9/d:Models/f:GithubUser.cs" caret="55" fromTop="2" />
+      <File id="59C24364-8C00-46AD-9CE6-1D5630656DF9/d:Base/f:JsonConverter.cs" caret="1114" fromTop="34" />
+      <File id="59C24364-8C00-46AD-9CE6-1D5630656DF9/d:Base/f:BaseAPI.cs" caret="3069" fromTop="34" />
+      <File id="59C24364-8C00-46AD-9CE6-1D5630656DF9/d:API/f:PullRequest.cs" caret="992" fromTop="22" />
+      <File id="59C24364-8C00-46AD-9CE6-1D5630656DF9/d:Models/d:Internal/f:PullRequest.cs" caret="208" fromTop="9" />
+      <File id="59C24364-8C00-46AD-9CE6-1D5630656DF9/d:Models/f:PullRequest.cs" caret="1878" fromTop="74" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Views/d:GitPullRequests/f:Index.aspx" caret="1642" fromTop="35" />
+      <File id="0BA2E4EE-1B96-411E-818A-A9CA542E5590/f:PullRequestWrapper.cs" caret="2346" fromTop="12" />
+      <File id="59C24364-8C00-46AD-9CE6-1D5630656DF9/d:Models/d:Internal/f:Commit.cs" caret="141" fromTop="6" />
+      <File id="0BA2E4EE-1B96-411E-818A-A9CA542E5590/f:CommitsWrapper.cs" caret="1152" fromTop="29" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="2097" fromTop="9" />
     </RecentFiles>
     <RecentEdits>
-      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="1486" fromTop="23" />
-      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="2373" fromTop="41" />
-      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="1702" fromTop="27" />
-      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="1948" fromTop="30" />
-      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="2326" fromTop="37" />
-      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Views/d:GitPullRequests/f:Index.aspx" caret="418" fromTop="9" />
-      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Views/d:GitPullRequests/f:Index.aspx" caret="395" fromTop="9" />
-      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Views/d:GitPullRequests/f:Index.aspx" caret="1134" fromTop="22" />
-      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="1320" fromTop="37" />
-      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="652" fromTop="22" />
-      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="437" fromTop="20" />
-      <File id="308EBC64-BFA7-40E3-9855-20099B94C665/f:ServerApp.cs" caret="832" fromTop="17" />
-      <File id="308EBC64-BFA7-40E3-9855-20099B94C665/f:ServerApp.cs" caret="1101" fromTop="26" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Views/d:GitPullRequests/f:Index.aspx" caret="1391" fromTop="28" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Views/d:GitPullRequests/f:Index.aspx" caret="1369" fromTop="24" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="3117" fromTop="17" />
+      <File id="0BA2E4EE-1B96-411E-818A-A9CA542E5590/f:PullRequestWrapper.cs" caret="283" fromTop="3" />
+      <File id="0BA2E4EE-1B96-411E-818A-A9CA542E5590/f:CommitsWrapper.cs" caret="235" fromTop="4" />
+      <File id="0BA2E4EE-1B96-411E-818A-A9CA542E5590/f:CommitsWrapper.cs" caret="2306" fromTop="53" />
+      <File id="0BA2E4EE-1B96-411E-818A-A9CA542E5590/f:CommitsWrapper.cs" caret="1878" fromTop="35" />
+      <File id="0BA2E4EE-1B96-411E-818A-A9CA542E5590/f:CommitsWrapper.cs" caret="1517" fromTop="28" />
+      <File id="0BA2E4EE-1B96-411E-818A-A9CA542E5590/f:CommitsWrapper.cs" caret="925" fromTop="25" />
+      <File id="0BA2E4EE-1B96-411E-818A-A9CA542E5590/f:PullRequestWrapper.cs" caret="2559" fromTop="25" />
+      <File id="0BA2E4EE-1B96-411E-818A-A9CA542E5590/f:PullRequestWrapper.cs" caret="3636" fromTop="44" />
+      <File id="0BA2E4EE-1B96-411E-818A-A9CA542E5590/f:PullRequestWrapper.cs" caret="3129" fromTop="32" />
+      <File id="0BA2E4EE-1B96-411E-818A-A9CA542E5590/f:PullRequestWrapper.cs" caret="3495" fromTop="39" />
+      <File id="0BA2E4EE-1B96-411E-818A-A9CA542E5590/f:CommitsWrapper.cs" caret="486" fromTop="16" />
+      <File id="0BA2E4EE-1B96-411E-818A-A9CA542E5590/f:PullRequestWrapper.cs" caret="2509" fromTop="37" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="1843" fromTop="12" />
+      <File id="0BA2E4EE-1B96-411E-818A-A9CA542E5590/f:CommitsWrapper.cs" caret="1979" fromTop="44" />
+      <File id="0BA2E4EE-1B96-411E-818A-A9CA542E5590/f:PullRequestWrapper.cs" caret="2132" fromTop="7" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="3116" fromTop="27" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="3665" fromTop="46" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="3608" fromTop="36" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="3712" fromTop="30" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="3250" fromTop="21" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Views/d:GitPullRequests/f:Index.aspx" caret="2166" fromTop="43" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Views/d:GitPullRequests/f:Index.aspx" caret="1642" fromTop="35" />
+      <File id="0BA2E4EE-1B96-411E-818A-A9CA542E5590/f:PullRequestWrapper.cs" caret="2738" fromTop="21" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="2663" fromTop="17" />
+      <File id="0BA2E4EE-1B96-411E-818A-A9CA542E5590/f:CommitsWrapper.cs" caret="932" fromTop="25" />
+      <File id="0BA2E4EE-1B96-411E-818A-A9CA542E5590/f:CommitsWrapper.cs" caret="1147" fromTop="29" />
+      <File id="67A3848E-A691-40D0-BB09-D559BF0B0766/d:Controllers/f:GitPullRequestsController.cs" caret="2578" fromTop="16" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -46,17 +70,71 @@
   </UnitTestRunnerNUnit>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="public" priority="1" />
+      <Item value="public" priority="3" />
       <Item value="ActionResult`0" priority="0" />
-      <Item value="string" priority="2" />
-      <Item value="Repo" priority="0" />
+      <Item value="string" priority="11" />
+      <Item value="Repo" priority="1" />
       <Item value="request" priority="0" />
-      <Item value="true" priority="0" />
+      <Item value="true" priority="1" />
       <Item value="View`0" priority="0" />
       <Item value="ViewData" priority="0" />
-      <Item value="null" priority="0" />
+      <Item value="null" priority="4" />
       <Item value="results" priority="0" />
       <Item value="PullState`0" priority="0" />
+      <Item value="responseTxt" priority="0" />
+      <Item value="Core" priority="0" />
+      <Item value="API" priority="0" />
+      <Item value="Models" priority="2" />
+      <Item value="while" priority="1" />
+      <Item value="false" priority="1" />
+      <Item value="if" priority="7" />
+      <Item value="new" priority="6" />
+      <Item value="List&lt;PullRequest&gt;" priority="0" />
+      <Item value="fetchNextBatch" priority="1" />
+      <Item value="requests" priority="0" />
+      <Item value="int" priority="8" />
+      <Item value="i" priority="3" />
+      <Item value="PullRequest" priority="3" />
+      <Item value="for" priority="1" />
+      <Item value="totalPulls" priority="0" />
+      <Item value="var" priority="0" />
+      <Item value="pull" priority="1" />
+      <Item value="s" priority="0" />
+      <Item value="List" priority="3" />
+      <Item value="t" priority="0" />
+      <Item value="p" priority="2" />
+      <Item value="Tuple" priority="0" />
+      <Item value="foreach" priority="5" />
+      <Item value="in" priority="0" />
+      <Item value="discussionEntry" priority="1" />
+      <Item value="ThreadStaticAttribute`0" priority="0" />
+      <Item value="using" priority="0" />
+      <Item value="PullRequest`0" priority="2" />
+      <Item value="return" priority="1" />
+      <Item value="private" priority="0" />
+      <Item value="pullId" priority="1" />
+      <Item value="UserName" priority="0" />
+      <Item value="UserPassword" priority="0" />
+      <Item value="DateTime`0" priority="0" />
+      <Item value="Commit`0" priority="2" />
+      <Item value="page" priority="1" />
+      <Item value="List&lt;Commit&gt;" priority="1" />
+      <Item value="CommitsWrapper`0" priority="0" />
+      <Item value="FilterDate" priority="0" />
+      <Item value="totalCommits" priority="0" />
+      <Item value="totalCommit" priority="4" />
+      <Item value="else" priority="2" />
+      <Item value="PullRequestsWrapper`0" priority="0" />
+      <Item value="List&lt;Tuple&lt;string,int,string&gt;&gt;" priority="0" />
+      <Item value="d" priority="1" />
+      <Item value="hash" priority="1" />
+      <Item value="matchingPull" priority="4" />
+      <Item value="Tuple&lt;string,int,string&gt;" priority="0" />
+      <Item value="Dictionary" priority="0" />
+      <Item value="Dictionary&lt;Commit,PullRequest&gt;" priority="0" />
+      <Item value="pullRequest" priority="0" />
+      <Item value="tempList" priority="0" />
+      <Item value="Thread`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.String">
       <Item value="Format`0" priority="0" />
@@ -70,6 +148,72 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.String">
       <Item value="Replace`0" priority="0" />
+      <Item value="Contains`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="AddRange`0" priority="1" />
+      <Item value="Count" priority="4" />
+      <Item value="Select`2" priority="1" />
+      <Item value="SelectMany`3" priority="0" />
+      <Item value="Where`1" priority="0" />
+      <Item value="ForEach`0" priority="0" />
+      <Item value="Add`0" priority="3" />
+      <Item value="FirstOrDefault`1" priority="0" />
+      <Item value="Any`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GithubSharp.Core.Models.Internal.PullRequestContainer">
+      <Item value="PullRequest" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GithubSharp.Core.Models.PullRequest">
+      <Item value="Discussion" priority="3" />
+      <Item value="Position" priority="0" />
+      <Item value="DiffUrl" priority="2" />
+      <Item value="Created" priority="0" />
+      <Item value="Number" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GithubSharp.Core.Models.DiscussionEntry">
+      <Item value="Type" priority="2" />
+      <Item value="Id" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="ToList`1" priority="0" />
+      <Item value="SelectMany`3" priority="0" />
+      <Item value="Select`2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Tuple`3">
+      <Item value="Item1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Threading.Thread">
+      <Item value="Sleep`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@GithubSharp_Wrapper.CommitsWrapper">
+      <Item value="GetCommitsFromJSON`0" priority="0" />
+      <Item value="GetPullRequest`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GithubSharp.Core.Models.Commit">
+      <Item value="CommittedDate" priority="1" />
+      <Item value="Id" priority="1" />
+      <Item value="Message" priority="2" />
+      <Item value="AuthoredDate" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GithubSharp_Wrapper.PullRequestCollection">
+      <Item value="PullRequests" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GithubSharp_Wrapper.CommitListContainer">
+      <Item value="Commits" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@GithubSharp_Wrapper.PullRequestsWrapper">
+      <Item value="GetPullRequest`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.KeyValuePair`2">
+      <Item value="Key" priority="0" />
+      <Item value="Value" priority="1" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>
